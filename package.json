@@ -1,0 +1,27 @@
+{
+  "name": "@pnwairfire/piles-calculator",
+  "version": "1.0.0",
+  "description": "Piles fuel load calculator",
+  "main": "./src/index.js",
+  "bin": {
+    "piles-calc": "./bin/piles-calc",
+    "piles-calc-server": "./bin/piles-calc-server"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnwairfire/piles-calculator.git"
+  },
+  "keywords": [
+    "piles",
+    "fuels"
+  ],
+  "author": "Joel Dubowy",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pnwairfire/piles-calculator/issues"
+  },
+  "homepage": "https://github.com/pnwairfire/piles-calculator#readme"
+}
