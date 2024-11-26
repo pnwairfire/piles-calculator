@@ -10,11 +10,13 @@
     "url": "git+https://github.com/pnwairfire/piles-calculator.git"
   },
   "bin": {
-    "piles-calc": "./bin/piles-calc",
-    "piles-calc-server": "./bin/piles-calc-server"
+    "piles-calc": "./dist/bin/piles-calc.js",
+    "piles-calc-server": "./dist/bin/piles-calc-server.js"
   },
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "npm run build:main && npm run build:bin",
+    "build:main": "esbuild src/index.js --bundle --platform=node --outfile=dist/index.js",
+    "build:bin": "esbuild src/bin/piles-calc.js --bundle --platform=node --outfile=dist/bin/piles-calc.js && esbuild src/bin/piles-calc-server.js --bundle --platform=node --outfile=dist/bin/piles-calc-server.js",
     "test": "jest"
   },
   "keywords": [
@@ -26,9 +28,7 @@
   },
   "homepage": "https://github.com/pnwairfire/piles-calculator#readme",
   "devDependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "esbuild": "^0.24.0",
     "jest": "^29.7.0"
   }
 }
