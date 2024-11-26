@@ -14,9 +14,8 @@
     "piles-calc-server": "./dist/bin/piles-calc-server.js"
   },
   "scripts": {
-    "build": "npm run build:main && npm run build:bin",
-    "build:main": "esbuild src/index.js --bundle --platform=node --outfile=dist/index.js",
-    "build:bin": "esbuild src/bin/piles-calc.js --bundle --platform=node --outfile=dist/bin/piles-calc.js && esbuild src/bin/piles-calc-server.js --bundle --platform=node --outfile=dist/bin/piles-calc-server.js",
+    "build": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --bundle --platform=node --outdir=dist/",
+    "build:watch": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --bundle --platform=node --outdir=dist/ --watch",
     "test": "jest"
   },
   "keywords": [
