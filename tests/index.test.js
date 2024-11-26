@@ -1,4 +1,4 @@
-import { caclPiles } from "../src/index";
+import { calcPiles } from "../src/index";
 
 test("returns 1", () => {
   //console.log = jest.fn();
