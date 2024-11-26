@@ -1,3 +1,8 @@
 #!/usr/bin/env node
 
-console.log("Piles Calculator not implemented");
+import yargs from 'yargs/yargs'
+
+var argv = yargs(process.argv.slice(2))
+    .parse();
+
+console.log("argv: ", argv);
