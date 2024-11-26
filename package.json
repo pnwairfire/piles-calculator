@@ -14,8 +14,8 @@
     "piles-calc-server": "./dist/bin/piles-calc-server.js"
   },
   "scripts": {
-    "build": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --bundle --platform=node --outdir=dist/",
-    "build:watch": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --bundle --platform=node --outdir=dist/ --watch",
+    "build": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --external:livereload-js --bundle --platform=node --outdir=dist/",
+    "build:watch": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --external:livereload-js --bundle --platform=node --outdir=dist/ --watch",
     "test": "jest"
   },
   "keywords": [
@@ -32,6 +32,9 @@
     "jest-esbuild": "^0.3.0"
   },
   "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "hono": "^4.6.12",
+    "livereload": "^0.9.3",
     "yargs": "^17.7.2"
   }
 }
