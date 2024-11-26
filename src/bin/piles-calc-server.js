@@ -1,16 +1,28 @@
 #!/usr/bin/env node
 
-import path from 'path'
 import yargs from 'yargs/yargs'
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
 import { calcPiles } from '../index'
 
-var argv = yargs(process.argv.slice(2))
+
+const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 --port [num]')
   .help('h').alias('h', 'help')
-  .parse();
+  .option('port', {
+    alias: 'p',
+    describe: 'Port',
+    type: 'number',
+    demandOption: false
+  })
+  .check((argv) => {
+    // if (argv.foo !== undefined && argv.foo < 18) {
+    //   throw new Error("Error message");
+    // }
+    return true; // Validates the arguments
+  })
+  .argv;
 
 const app = new Hono()
 
