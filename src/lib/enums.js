@@ -13,7 +13,8 @@ function createEnum(name, values) {
 
 export const ShapeTypes = createEnum('Shape', [
   'HalfSphere', 'Paraboloid', 'HalfCylinder', 'HalfFrustumOfCone',
-  'HalfFrustumOfConeWithRoundedEnds', 'HalfEllipsoidIrregularSolid'
+  'HalfFrustumOfConeWithRoundedEnds', 'HalfEllipsoidIrregularSolid',
+  'Irregular'
 ]);
 
 export const UnitSystems = createEnum('Unit System', [
