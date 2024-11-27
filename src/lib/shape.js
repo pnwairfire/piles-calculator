@@ -17,19 +17,29 @@ export class Shape {
     if (typeof this._volume !== 'undefined')
       return this._volume
 
+    /* Half Sphere */
     if (this.shapeType == ShapeTypes.HalfSphere) {
       /*  volume = (PI * h1^3)/6  */
       this.validate('h1')
       this._volume = (Math.PI * Math.pow(this.dims.h1, 3)) / 6
-    } else if (this.shapeType == ShapeTypes.Paraboloid) {
+    }
+
+    /* Paraboloid */
+    else if (this.shapeType == ShapeTypes.Paraboloid) {
       /*  volume = (PI * h1 * w1^2)/8  */
       this.validate('h1', 'w1')
       this._volume = (Math.PI * this.dims.h1 * Math.pow(this.dims.w1, 2)) / 8
-    } else if (this.shapeType == ShapeTypes.HalfCylinder) {
+    }
+
+    /* Half Cylinder */
+    else if (this.shapeType == ShapeTypes.HalfCylinder) {
       /*  volume = (PI * h1 * w1 * l1)/4  */
       this.validate('h1', 'w1', 'l1')
       this._volume = (Math.PI * this.dims.h1 * this.dims.w1 * this.dims.l1) / 4
-    } else if (this.shapeType == ShapeTypes.HalfFrustumOfCone) {
+    }
+
+    /* Half Frustum Of Cone */
+    else if (this.shapeType == ShapeTypes.HalfFrustumOfCone) {
       /*  volume = (PI * (l1 * (w1^2 + w2^2 + (w1*w2))))/24  */
       this.validate('w1', 'w2', 'l1')
       this._volume = (Math.PI * (
@@ -39,7 +49,10 @@ export class Shape {
           )
         )
       )) / 24.0
-    } else if (this.shapeType == ShapeTypes.HalfFrustumOfConeWithRoundedEnds) {
+    }
+
+    /* Half Frustum Of Cone With Rounded Ends */
+    else if (this.shapeType == ShapeTypes.HalfFrustumOfConeWithRoundedEnds) {
       /*  volume = (PI * (l1 * (w1^2 + w2^2 + (w1*w2)) + w1^3 + w2^3}]/24  */
       this.validate('w1', 'w2', 'l1')
       this._volume = (Math.PI * (
@@ -49,11 +62,17 @@ export class Shape {
           )
         ) + Math.pow(this.dims.w1, 3) + Math.pow(this.dims.w2, 3)
       )) / 24.0
-    } else if (this.shapeType == ShapeTypes.HalfEllipsoidIrregularSolid) {
+    }
+
+    /* Half Ellipsoid Irregular Solid */
+    else if (this.shapeType == ShapeTypes.HalfEllipsoidIrregularSolid) {
       /*  volume = (PI * h1 * w1 * l1)/6  */
       this.validate('h1', 'w1', 'l1')
       this._volume = (Math.PI * this.dims.h1 * this.dims.w1 * this.dims.l1) / 6.0
-    } else if (this.shapeType == ShapeTypes.Irregular) {
+    }
+
+    /* Irregular */
+    else if (this.shapeType == ShapeTypes.Irregular) {
       /*  volume = ((l1 + l2)(w1 + w2)(h1 + h2))/8  */
       this.validate('h1', 'h2', 'w1', 'w2', 'l1', 'l2')
       this._volume = (

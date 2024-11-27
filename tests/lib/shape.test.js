@@ -90,3 +90,37 @@ test("Valid h1 but invalid negative w1 specified for Paraboloid", () => {
 
 /* Valid Shapes */
 
+test("Valid HalfSphere", () => {
+  const p = new Shape(ShapeTypes.HalfSphere, {h1: 3})
+  expect(p.volume).toBe(14.137166941154069)
+});
+
+test("Valid Paraboloid", () => {
+  const p = new Shape(ShapeTypes.Paraboloid, {h1: 3, w1: 4})
+  expect(p.volume).toBe(18.84955592153876)
+});
+
+test("Valid HalfCylinder", () => {
+  const p = new Shape(ShapeTypes.HalfCylinder, {h1: 3, w1: 4, l1: 5})
+  expect(p.volume).toBe(47.12388980384689)
+});
+
+test("Valid HalfFrustumOfCone", () => {
+  const p = new Shape(ShapeTypes.HalfFrustumOfCone, {w1: 4, w2: 6, l1:3})
+  expect(p.volume).toBe(29.845130209103033)
+});
+
+test("Valid HalfFrustumOfConeWithRoundedEnds", () => {
+  const p = new Shape(ShapeTypes.HalfFrustumOfConeWithRoundedEnds, {w1: 4, w2: 6, l1:3})
+  expect(p.volume).toBe(66.49704450098396)
+});
+
+test("Valid HalfEllipsoidIrregularSolid", () => {
+  const p = new Shape(ShapeTypes.HalfEllipsoidIrregularSolid, {h1: 3, w1: 4, l1: 5})
+  expect(p.volume).toBe(31.415926535897928)
+});
+
+test("valid Irregular", () => {
+  const p = new Shape(ShapeTypes.Irregular, {h1: 3, w1: 4, l1: 5, h2: 6, w2: 7, l2: 8})
+  expect(p.volume).toBe(160.875)
+});
