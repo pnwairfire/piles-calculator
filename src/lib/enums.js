@@ -11,7 +11,7 @@ function createEnum(name, values) {
   return Object.freeze(obj);
 }
 
-export const Shapes = createEnum('Shape', [
+export const ShapeTypes = createEnum('Shape', [
   'HalfSphere', 'Paraboloid', 'HalfCylinder', 'HalfFrustumOfCone',
   'HalfFrustumOfConeWithRoundedEnds', 'HalfEllipsoidIrregularSolid'
 ]);
