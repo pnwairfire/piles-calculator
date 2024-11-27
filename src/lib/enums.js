@@ -3,7 +3,7 @@ function createEnum(name, values) {
   for (const val of values) {
     obj[val] = val;
   }
-  obj.keys = values
+  obj.values = values
   obj.validate = key => {
     if (values.indexOf(key) < 0)
       throw `${name} must be one of the following: ${values.join(', ')}`
@@ -19,4 +19,8 @@ export const ShapeTypes = createEnum('Shape', [
 
 export const UnitSystems = createEnum('Unit System', [
     'English', 'Metric'
+])
+
+export const PileCompositionOptions = createEnum('Pile composition', [
+    'Conifer', 'ShrubHardwood'
 ])

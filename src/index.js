@@ -1,3 +1,3 @@
-export function calcPiles() {
+export function calcPiles(args) {
     return 1;
 }

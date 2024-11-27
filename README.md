@@ -16,3 +16,8 @@ To run the piles calc server in dev mode, using nodemon to auto-reload:
 To run in production mode
 
     npm run serve
+
+
+### Tests
+
+    npm test
