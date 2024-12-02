@@ -4,7 +4,7 @@ import yargs from 'yargs/yargs'
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
-import { calcPiles } from '../index'
+//import { calcPiles } from '../index'
 
 
 const argv = yargs(process.argv.slice(2))
