@@ -5,58 +5,64 @@ import yargs from 'yargs/yargs'
 //import { calcPiles } from '../index'
 import { ShapeTypes, PileCompositionOptions } from '../lib/enums'
 
+function addGeneralOptions(_yargs) {
+  return _yargs
+    .option('indent', {
+      alias: 'i',
+      describe: 'JSON indentation',
+      type: 'number',
+      demandOption: false
+    })
+    .option('number-of-piles', {
+      alias: 'n',
+      describe: "Number of piles",
+      type: 'number',
+      demandOption: true
+    })
+    .option('shape', {
+      alias: 's',
+      describe: "Pile shape",
+      type: 'string',
+      choices: ShapeTypes.values,
+      demandOption: true
+    })
+    .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
+    .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
+    .option('w1', { describe: "Width 1 (feet)", type: 'number', demandOption: false })
+    .option('w2', { describe: "Width 2 (feet)", type: 'number', demandOption: false })
+    .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
+    .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
+    .option('consumption-pct', {
+       alias: 'c',
+       describe: "% of piled material consumed",
+       type: 'number',
+       demandOption: true
+     })
 
-const args = yargs(process.argv.slice(2))
-  .wrap(null)
-  /* General options */
+}
+
+const argv = yargs(process.argv.slice(2))
+  .wrap(null) // to not line wrap output
+  .strict()  // to raise error for undefined optoins
   .usage('Usage: $0 [options] [hand|machine] [options]')
   .help('h').alias('h', 'help')
-  .option('indent', {
-    alias: 'i',
-    describe: 'JSON indentation',
-    type: 'number',
-    demandOption: false
-  })
-  .option('number-of-piles', {
-    alias: 'n',
-    describe: "Number of piles",
-    type: 'number',
-    demandOption: true
-  })
-  .option('shape', {
-    alias: 's',
-    describe: "Pile shape",
-    type: 'string',
-    choices: ShapeTypes.values,
-    demandOption: true
-  })
-  .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
-  .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
-  .option('w1', { describe: "Width 1 (feet)", type: 'number', demandOption: false })
-  .option('w2', { describe: "Width 2 (feet)", type: 'number', demandOption: false })
-  .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
-  .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
-  .option('consumption-pct', {
-     alias: 'c',
-     describe: "% of piled material consumed",
-     type: 'number',
-     demandOption: true
-   })
+  .demandCommand(1, 'You must specify a command - hands or machine')
 
   /* Hand piles */
   .command({
     command: 'hand',
     describe: 'Compute loadings for hand piles',
     builder: (_yargs) => {
-      return _yargs
+      return addGeneralOptions(_yargs)
         .option('comp', {
           describe: "Pile composition ",
           type: 'string',
           choices: PileCompositionOptions.values,
           demandOption: true
         })
-        .example('$0 -i 2 -n 10 -s HalfSphere -h1 5 hand -c 90 --comp conifer')
-        .example(`$0 -i 2 -n 40 -s HalfCylinder -h1 5 -w1 7 -l1 10 hand -c 80 --comp ShrubHardwood`)
+        .usage('Usage: $0 [options] hand [options]')
+        .example('$0 -i 2 -n 10 -s HalfSphere --h1 5 hand -c 90 --comp Conifer')
+        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 hand -c 80 --comp ShrubHardwood`)
     }
   })
 
@@ -65,7 +71,7 @@ const args = yargs(process.argv.slice(2))
     command: 'machine',
     describe: 'Compute loadings for machine piles',
     builder: (_yargs) => {
-      return _yargs
+      return addGeneralOptions(_yargs)
         .option('est-soil-pct', {
           //alias: 'soil',
           describe: "Estimated % of pile volume that is soil.",
@@ -99,10 +105,11 @@ const args = yargs(process.argv.slice(2))
         })
         // 'quality' {
         // }
-        .example(`$0 -i 2 -n 10 -s HalfSphere -h1 5 machine -c 90 --est-soil-pct 10 \\
+        .usage('Usage: $0 [options] machine [options]')
+        .example(`$0 -i 2 -n 10 -s HalfSphere --h1 5 machine -c 90 --est-soil-pct 10 \\
           --packing-ratio-pct 60 --primary-density 22 --primary-pct 80 --secondary-density 13 \\
           --secondary-pct 20`)
-        .example(`$0 -i 2 -n 40 -s HalfCylinder -h1 5 -w1 7 -l1 10 machine -c 80 \\
+        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 machine -c 80 \\
           --est-soil-pct 20 --packing-ratio-pct 80 --primary-density 3 --primary-pct 60 \\
           --secondary-density 5 --secondary-pct 40`)
     }
