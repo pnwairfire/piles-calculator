@@ -2,8 +2,11 @@
 
 import yargs from 'yargs/yargs'
 
-//import { calcPiles } from '../index'
-import { ShapeTypes, PileCompositionOptions } from '../lib/enums'
+import {
+  ShapeTypes, PileCompositionOptions, PileQualityOptions, UnitSystems
+} from '../lib/enums'
+import { compute } from '../index'
+
 
 function addGeneralOptions(_yargs) {
   return _yargs
@@ -26,13 +29,21 @@ function addGeneralOptions(_yargs) {
       choices: ShapeTypes.values,
       demandOption: true
     })
+    .option('unit-system', {
+      alias: 'u',
+      describe: "Unit system",
+      type: 'string',
+      choices: UnitSystems.values,
+      demandOption: false,
+      default: UnitSystems.English
+    })
     .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
     .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
     .option('w1', { describe: "Width 1 (feet)", type: 'number', demandOption: false })
     .option('w2', { describe: "Width 2 (feet)", type: 'number', demandOption: false })
     .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
     .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
-    .option('consumption-pct', {
+    .option('percent-consumed', {
        alias: 'c',
        describe: "% of piled material consumed",
        type: 'number',
@@ -50,61 +61,67 @@ const argv = yargs(process.argv.slice(2))
 
   /* Hand piles */
   .command({
-    command: 'hand',
+    command: 'Hand',
     describe: 'Compute loadings for hand piles',
     builder: (_yargs) => {
       return addGeneralOptions(_yargs)
-        .option('comp', {
+        .option('pile-composition', {
+          alias: 'comp',
           describe: "Pile composition ",
           type: 'string',
           choices: PileCompositionOptions.values,
           demandOption: true
         })
         .usage('Usage: $0 [options] hand [options]')
-        .example('$0 -i 2 -n 10 -s HalfSphere --h1 5 hand -c 90 --comp Conifer')
-        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 hand -c 80 --comp ShrubHardwood`)
+        .example('$0 -i 2 -n 10 -s HalfSphere --h1 5 Hand -c 90 --comp Conifer')
+        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 Hand -c 80 --comp ShrubHardwood`)
     }
   })
 
   /* Machine piles*/
   .command({
-    command: 'machine',
+    command: 'Machine',
     describe: 'Compute loadings for machine piles',
     builder: (_yargs) => {
       return addGeneralOptions(_yargs)
-        .option('est-soil-pct', {
-          //alias: 'soil',
+        .option('soil-percentt', {
           describe: "Estimated % of pile volume that is soil.",
           type: 'number',
           demandOption: true
         })
-        .option('packing-ratio-pct', {
+        .option('packing-ratio-percent', {
+          alias: 'packing-pct',
           describe: "Packing ratio",
           type: 'number',
           demandOption: true
         })
-        .option('primary-density', {
+        .option('primary-species-density', {
           describe: "Primary species wood density (lb/ft3)",
           type: 'number',
           demandOption: true
         })
-        .option('primary-pct', {
+        .option('primary-species-pct', {
           describe: "Primary species %",
           type: 'number',
           demandOption: true
         })
-        .option('secondary-density', {
+        .option('secondary-species-density', {
           describe: "Secondary species wood density (lb/ft3)",
           type: 'number',
-          demandOption: true
+          demandOption: false
         })
-        .option('secondary-pct', {
+        .option('secondary-species-pct', {
           describe: "Secondary species %",
           type: 'number',
+          demandOption: false
+        })
+        .option('pile-quality', {
+          alias: 'quality',
+          describe: "Pile quality ",
+          type: 'string',
+          choices: PileQualityOptions.values,
           demandOption: true
         })
-        // 'quality' {
-        // }
         .usage('Usage: $0 [options] machine [options]')
         .example(`$0 -i 2 -n 10 -s HalfSphere --h1 5 machine -c 90 --est-soil-pct 10 \\
           --packing-ratio-pct 60 --primary-density 22 --primary-pct 80 --secondary-density 13 \\
@@ -127,10 +144,9 @@ const argv = yargs(process.argv.slice(2))
   /* Get Args */
   .argv;
 
-console.log("argv: ", argv);
-
-const loadings = {} //calcPiles(argv)
+//console.log("argv: ", argv);
+const r = compute(argv._[0], argv)
 
 process.stdout.write(
-  JSON.stringify({loadings: loadings}, null, argv.indent) + '\n'
+  JSON.stringify(r, null, argv.indent) + '\n'
 )

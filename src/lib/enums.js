@@ -11,16 +11,26 @@ function createEnum(name, values) {
   return Object.freeze(obj);
 }
 
+export const PileType = createEnum('Pile Type', [
+  'Hand', 'Machine'
+])
+
 export const ShapeTypes = createEnum('Shape', [
   'HalfSphere', 'Paraboloid', 'HalfCylinder', 'HalfFrustumOfCone',
   'HalfFrustumOfConeWithRoundedEnds', 'HalfEllipsoidIrregularSolid',
   'Irregular'
-]);
+])
 
 export const UnitSystems = createEnum('Unit System', [
-    'English', 'Metric'
+  'English', 'Metric'
 ])
 
 export const PileCompositionOptions = createEnum('Pile composition', [
-    'Conifer', 'ShrubHardwood'
+  'Conifer', 'ShrubHardwood'
+])
+
+export const PileQualityOptions = createEnum('Pile quality', [
+  'Clean', // 0% soil
+  'Dirty', // >0 - 10% soil
+  'VeryDirty' // >10% soil)
 ])
