@@ -73,8 +73,8 @@ const argv = yargs(process.argv.slice(2))
           demandOption: true
         })
         .usage('Usage: $0 [options] hand [options]')
-        .example('$0 -i 2 -n 10 -s HalfSphere --h1 5 Hand -c 90 --comp Conifer')
-        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 Hand -c 80 --comp ShrubHardwood`)
+        .example('$0 Hand -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --comp Conifer')
+        .example(`$0 Hand -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 -c 80 --comp ShrubHardwood`)
     }
   })
 
@@ -123,10 +123,10 @@ const argv = yargs(process.argv.slice(2))
           demandOption: true
         })
         .usage('Usage: $0 [options] machine [options]')
-        .example(`$0 -i 2 -n 10 -s HalfSphere --h1 5 machine -c 90 --est-soil-pct 10 \\
+        .example(`$0 Machine -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --est-soil-pct 10 \\
           --packing-ratio-pct 60 --primary-density 22 --primary-pct 80 --secondary-density 13 \\
           --secondary-pct 20`)
-        .example(`$0 -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 machine -c 80 \\
+        .example(`$0 Machine -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 -c 80 \\
           --est-soil-pct 20 --packing-ratio-pct 80 --primary-density 3 --primary-pct 60 \\
           --secondary-density 5 --secondary-pct 40`)
     }

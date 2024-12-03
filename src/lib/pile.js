@@ -34,14 +34,16 @@ const tons_to_Mg = 1 / Mg_to_tons
 const flamingFactors = {CO: 52.66, CO2: 3429.22, CH4: 3.28, NMHC: 3.56}
 const smoldResidFactors = {CO: 130.37, CO2: 3089.86, CH4: 11.03, NMHC: 6.78}
 const pmEmissionsEfs = {}
-pmEmissionsEfs[PileCompositionOptions.Clean] = {PM: 21.9, PM10: 15.5, 'PM2.5': 13.5}
-pmEmissionsEfs[PileCompositionOptions.Dirty] = {PM: 27.0, PM10: 20.0, 'PM2.5': 17.0}
-pmEmissionsEfs[PileCompositionOptions.VeryDirty] = {PM: 36.0, PM10: 28.0, 'PM2.5': 23.6}
+pmEmissionsEfs[PileQualityOptions.Clean] = {PM: 21.9, PM10: 15.5, 'PM2.5': 13.5}
+pmEmissionsEfs[PileQualityOptions.Dirty] = {PM: 27.0, PM10: 20.0, 'PM2.5': 17.0}
+pmEmissionsEfs[PileQualityOptions.VeryDirty] = {PM: 36.0, PM10: 28.0, 'PM2.5': 23.6}
 
-Object.keys(flamingFactors).forEach(species => {
-  // TODO: where does the 70% / 30% come from
-  pmEmissionsEfs[species] = (0.7 * flamingFactors[species])
-    + (0.3 * smoldResidFactors[species])
+Object.keys(pmEmissionsEfs).forEach(pq => {
+  Object.keys(flamingFactors).forEach(species => {
+    // TODO: where does the 70% / 30% come from
+    pmEmissionsEfs[pq][species] = (0.7 * flamingFactors[species])
+      + (0.3 * smoldResidFactors[species])
+  })
 })
 
 

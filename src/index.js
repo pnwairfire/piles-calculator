@@ -11,7 +11,6 @@ export function compute(pileType, args) {
     return r
   }, {})
 
-  debugger
   const shape = new Shape(args.shape, dimensions)
   let pile = (pileType == PileType.Hand) ?
     (new HandPile(args, shape)) : (new MachinePile(args, shape))
@@ -21,8 +20,8 @@ export function compute(pileType, args) {
     correctedVolume: pile.correctedVolume * args.numberOfPiles,
     pileMass: pile.pileMass * args.numberOfPiles,
     consumedMass: pile.consumedMass * args.numberOfPiles,
-    emissions: Object.piles(pile.emissions).reduce((r, species) => {
-      r[species] = r[species] * args.numberOfPiles
+    emissions: Object.keys(pile.emissions).reduce((r, species) => {
+      r[species] = pile.emissions[species] * args.numberOfPiles
       return r
     }, {}),
   }
