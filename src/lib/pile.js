@@ -33,15 +33,15 @@ const tons_to_Mg = 1 / Mg_to_tons
 
 const flamingFactors = {CO: 52.66, CO2: 3429.22, CH4: 3.28, NMHC: 3.56}
 const smoldResidFactors = {CO: 130.37, CO2: 3089.86, CH4: 11.03, NMHC: 6.78}
-const pmEmissionsEfs = {
-  PileCompositionOptions.Clean: {PM: 21.9, PM10: 15.5, 'PM2.5': 13.5},
-  PileCompositionOptions.Dirty: {PM: 27.0, PM10: 20.0, 'PM2.5': 17.0},
-  PileCompositionOptions.VeryDirty: {PM: 36.0, PM10: 28.0, 'PM2.5': 23.6},
-}
+const pmEmissionsEfs = {}
+pmEmissionsEfs[PileCompositionOptions.Clean] = {PM: 21.9, PM10: 15.5, 'PM2.5': 13.5}
+pmEmissionsEfs[PileCompositionOptions.Dirty] = {PM: 27.0, PM10: 20.0, 'PM2.5': 17.0}
+pmEmissionsEfs[PileCompositionOptions.VeryDirty] = {PM: 36.0, PM10: 28.0, 'PM2.5': 23.6}
+
 Object.keys(flamingFactors).forEach(species => {
   // TODO: where does the 70% / 30% come from
-  pmEmissionsEfs[species] = 0.7 * flamingFactors[species]
-    + (0.3 * smoldResidFactors[species]
+  pmEmissionsEfs[species] = (0.7 * flamingFactors[species])
+    + (0.3 * smoldResidFactors[species])
 })
 
 
@@ -53,7 +53,7 @@ class Pile {
     this.args = args
     this.shape = shape
 
-    this.validate()
+    this.validateInputs()
   }
 
   /* Validation */
@@ -100,19 +100,27 @@ class Pile {
 }
 
 export class HandPile extends Pile {
-  # pShape is the object pileShape
-  # pileComp is 0 (conifer) or 1 (shrub)
-
   constructor(args, shape) {
-    super(args, pShape)
+    super(args, shape)
 
-    PileCompositionOptions.validate(args.pileComposition)
+    // validateInputs is called in Pile constructor
+
+    this.args.pileQuality = PileQualityOptions.Clean
 
     this.computeCorrectedVolume()
     this.computePileMass()
     this.computeConsumedMass()
     this.computeEmissions()
   }
+
+  /* Validation */
+
+  validateInputs() {
+    super.validateInputs()
+
+    PileCompositionOptions.validate(this.args.pileComposition)
+  }
+
 
 
   /* Compuations */
@@ -126,9 +134,9 @@ export class HandPile extends Pile {
       ? (this.shape.volume * ft3_to_m3) : (this.shape.volume)
 
     if (volumeMetric < 1)
-      this.correctedVolume = math.exp(0.2106) * volumeMetric
+      this.correctedVolume = Math.exp(0.2106) * volumeMetric
     else
-      this.correctedVolume = math.exp(0.2106 + 0.7691*math.log(volumeMetric))
+      this.correctedVolume = Math.exp(0.2106 + 0.7691*Math.log(volumeMetric))
 
     // convert back to english if necessary
     if (this.unitSystem == UnitSystems.English)
@@ -143,19 +151,19 @@ export class HandPile extends Pile {
     const correctedVolumeMetric = (this.unitSystem == UnitSystems.English)
       ? (this.correctedVolume) : (this.correctedVolume * ft3_to_m3)
 
-    const massMetric = (args.pileComposition == PileCompositionOptions.Conifer)
-      ? (math.exp(4.4281 + 0.8028*math.log(correctedVolumeMetric)))
-      : (math.exp(3.0393 + 1.3129*math.log(correctedVolumeMetric)))
+    const massMetric = (this.args.pileComposition == PileCompositionOptions.Conifer)
+      ? (Math.exp(4.4281 + 0.8028*Math.log(correctedVolumeMetric)))
+      : (Math.exp(3.0393 + 1.3129*Math.log(correctedVolumeMetric)))
 
     this.pileMass = (this.unitSystem == UnitSystems.English)
-      ? ((mass_kg * kg_to_lb)/2000) : (mass_kg/1000)
+      ? ((massMetric * kg_to_lb) / 2000) : (massMetric / 1000)
   }
 }
 
 
 export class MachinePile extends Pile {
   constructor(args, shape) {
-    super(args, pShape)
+    super(args, shape)
 
     // validateInputs is called in Pile constructor
 
