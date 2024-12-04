@@ -39,11 +39,11 @@ function addGeneralOptions(_yargs) {
       default: UnitSystems.English
     })
     .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
-    .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
+    .option('h2', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
     .option('w1', { describe: "Width 1 (feet)", type: 'number', demandOption: false })
     .option('w2', { describe: "Width 2 (feet)", type: 'number', demandOption: false })
     .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
-    .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
+    .option('l2', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
     .option('percent-consumed', {
        alias: 'c',
        describe: "% of piled material consumed",
@@ -85,7 +85,7 @@ const argv = yargs(process.argv.slice(2))
     describe: 'Compute loadings for machine piles',
     builder: (_yargs) => {
       return addGeneralOptions(_yargs)
-        .option('soil-percentt', {
+        .option('soil-percent', {
           describe: "Estimated % of pile volume that is soil.",
           type: 'number',
           demandOption: true
@@ -150,10 +150,13 @@ let r = null
 try {
   r = compute(argv._[0], argv)
 } catch (e) {
-  r = {
-    error: (e instanceof InvalidInputError)
-      ? (e.message) : (`Unexpected Error: ${e.message}`)
-  }
+  if (e instanceof InvalidInputError)
+    r = { error: e.message }
+  else
+    r = {
+      error: e.message,
+      stack: e.stack
+    }
 }
 
 process.stdout.write(

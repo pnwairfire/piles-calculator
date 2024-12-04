@@ -19,6 +19,11 @@ To call the script:
     piles-calc -h
     piles-calc Hand -h
     piles-calc Machine -h
+    piles-calc Hand -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --comp Conifer
+
+To make a request to the web server:
+
+     curl "http://localhost:3000?"
 
 ### Tests
 
