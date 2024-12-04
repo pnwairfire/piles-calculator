@@ -1,3 +1,4 @@
+import { InvalidInputError } from './exceptions'
 import { ShapeTypes } from "./enums";
 
 
@@ -92,6 +93,9 @@ export class Shape {
     })
 
     if (invalid.length > 0)
-      throw `Specify ${invalid.length === 1 ? 'a ' : ''}positive number${invalid.length > 1 ? 's' : ''} for ${invalid.join(', ')}`
+      throw new InvalidInputError(
+        `Specify ${invalid.length === 1 ? 'a ' : ''}positive`
+        + ` number${invalid.length > 1 ? 's' : ''} for ${invalid.join(', ')}`
+      )
   }
 }

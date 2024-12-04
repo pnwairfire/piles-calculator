@@ -2,6 +2,7 @@
 
 import yargs from 'yargs/yargs'
 
+import { InvalidInputError } from '../lib/exceptions'
 import {
   ShapeTypes, PileCompositionOptions, PileQualityOptions, UnitSystems
 } from '../lib/enums'
@@ -145,7 +146,15 @@ const argv = yargs(process.argv.slice(2))
   .argv;
 
 //console.log("argv: ", argv);
-const r = compute(argv._[0], argv)
+let r = null
+try {
+  r = compute(argv._[0], argv)
+} catch (e) {
+  r = {
+    error: (e instanceof InvalidInputError)
+      ? (e.message) : (`Unexpected Error: ${e.message}`)
+  }
+}
 
 process.stdout.write(
   JSON.stringify(r, null, argv.indent) + '\n'

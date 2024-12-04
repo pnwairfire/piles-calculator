@@ -4,6 +4,7 @@ https://github.com/pnwairfire/fera-apps-pilescalc_python/blob/main/piles/py/pile
 (which was written by @pceagle)
 */
 
+import { InvalidInputError } from './exceptions'
 import {
   UnitSystems, PileCompositionOptions, PileQualityOptions
 } from './enums'
@@ -62,16 +63,16 @@ class Pile {
 
   validateInputs() {
     UnitSystems.validate(this.args.unitSystem)
-    this.isValidPercent(this.args.percentConsumed) //, true)
+    this.isValidPercent(this.args.percentConsumed, 'Consumed') //, true)
 
     if (!isNumeric(this.args.percentConsumed) && this.args.percentConsumed === null) {
-      throw "Parameter percent consumed must be a positive number (or null)."
+      throw new InvalidInputError("Parameter percent consumed must be a positive number (or null).")
     }
   }
 
   isValidPercent(val, name, allowNull) {
     if ((val === null && !allowNull) || !isNumeric(val) || val < 0 || val > 100)
-      throw `${name} percent must be between 0 and 100`
+      throw new InvalidInputError(`${name} percent must be between 0 and 100`)
   }
 
 
@@ -186,7 +187,7 @@ export class MachinePile extends Pile {
     this.isValidPercent(this.args.primarySpeciesPct, 'Primary Species')
     this.isValidPercent(this.args.secondarySpeciesPct, 'Secondary Species', true)
     if (this.args.primarySpeciesPct + this.args.secondarySpeciesPct !==100)
-      throw "Primary and secondary species percentages should add to 100%"
+      throw new InvalidInputError("Primary and secondary species percentages should add to 100%")
 
     this.isValidPercent(this.args.soilPercent, 'Soil')
     this.isValidPercent(this.args.packingRatioPercent, 'Packing')

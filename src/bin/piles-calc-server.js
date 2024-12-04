@@ -4,7 +4,8 @@ import yargs from 'yargs/yargs'
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
-//import { calcPiles } from '../index'
+import { InvalidInputError } from '../lib/exceptions'
+import { compute } from '../index'
 
 
 const argv = yargs(process.argv.slice(2))
@@ -27,7 +28,26 @@ const argv = yargs(process.argv.slice(2))
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.json({msg: 'not yet implemented!'})
+
+  let r = null
+  let status = 200
+
+  try {
+    // Leave status == 200
+    // TODO: convert all query parms; is there a way to specify a schema
+    //   with allowed query params and their types
+    r = compute(c.req.query('pileType'), c.req.query)
+  } catch (e) {
+    status = (e instanceof InvalidInputError) ? (400) : (500)
+    r = {
+      error: (e instanceof InvalidInputError) ? (e.message) : ('Unexpected Error')
+    }
+  }
+
+  // TODO: figure out why chaining `status` and `json` isn't working
+  //return c.status(status).json(r)
+  c.status(status)
+  return c.json(r)
 })
 
 serve(app)
