@@ -50,6 +50,11 @@ Object.keys(pmEmissionsEfs).forEach(pq => {
 
 /* Pile Classes */
 
+
+/*
+ * Pile base class
+ */
+
 class Pile {
 
   constructor(args, shape) {
@@ -81,7 +86,7 @@ class Pile {
   /* Compuations */
 
   computeConsumedMass() {
-    return this.pileMass * (this.args.percentConsumed / 100.0)
+    this.consumedMass = this.pileMass * (this.args.percentConsumed / 100.0)
   }
 
 
@@ -103,6 +108,12 @@ class Pile {
     }, {})
   }
 }
+
+
+
+/*
+ * HandPile
+ */
 
 export class HandPile extends Pile {
   constructor(args, shape) {
@@ -126,8 +137,6 @@ export class HandPile extends Pile {
     PileCompositionOptions.validate(this.args.pileComposition)
   }
 
-
-
   /* Compuations */
 
   computeCorrectedVolume() {
@@ -135,7 +144,7 @@ export class HandPile extends Pile {
      true pile volume (TV) from geometric volume (GV) in m^3 */
 
     // Volume correction assumes volume in m^3, so convert if necessary
-    const volumeMetric = (this.unitSystem == UnitSystems.English)
+    const volumeMetric = (this.args.unitSystem == UnitSystems.English)
       ? (this.shape.volume * ft3_to_m3) : (this.shape.volume)
 
     if (volumeMetric < 1)
@@ -144,7 +153,7 @@ export class HandPile extends Pile {
       this.correctedVolume = Math.exp(0.2106 + 0.7691*Math.log(volumeMetric))
 
     // convert back to english if necessary
-    if (this.unitSystem == UnitSystems.English)
+    if (this.args.unitSystem == UnitSystems.English)
       this.correctedVolume *= m3_to_ft3
   }
 
@@ -153,18 +162,23 @@ export class HandPile extends Pile {
       regression equations + pile composition (shrub/conifer) */
 
     // Mass computation assumes volume in m^3, so convert if necessary
-    const correctedVolumeMetric = (this.unitSystem == UnitSystems.English)
+    const correctedVolumeMetric = (this.args.unitSystem == UnitSystems.English)
       ? (this.correctedVolume) : (this.correctedVolume * ft3_to_m3)
 
     const massMetric = (this.args.pileComposition == PileCompositionOptions.Conifer)
       ? (Math.exp(4.4281 + 0.8028*Math.log(correctedVolumeMetric)))
       : (Math.exp(3.0393 + 1.3129*Math.log(correctedVolumeMetric)))
 
-    this.pileMass = (this.unitSystem == UnitSystems.English)
+    this.pileMass = (this.args.unitSystem == UnitSystems.English)
       ? ((massMetric * kg_to_lb) / 2000) : (massMetric / 1000)
   }
 }
 
+
+
+/*
+ * HandPile
+ */
 
 export class MachinePile extends Pile {
   constructor(args, shape) {
@@ -199,21 +213,25 @@ export class MachinePile extends Pile {
   /* Compuations */
 
   computeWoodDensity() {
-    this.woodDensity = (this.primarySpeciesPct / 100) * this.primarySpeciesDensity
-    if (this.secondarySpeciesPct)
-      this.woodDensity += (this.secondarySpeciesPct / 100) * this.secondarySpeciesDensity
+
+    // TODO: verify that primary and secondary pcts add to 100, allowing
+    //   for possibility of secondary pct not beind defined
+
+    this.woodDensity = (this.args.primarySpeciesPct / 100) * this.args.primarySpeciesDensity
+    if (this.args.secondarySpeciesPct)
+      this.woodDensity += (this.args.secondarySpeciesPct / 100) * this.args.secondarySpeciesDensity
   }
 
   computeCorrectedVolume() {
     const gv = this.shape.volume
-    const pr = this.packingRatioPercent/100.0
-    const sp = (100.0 - this.soilPercent)/100.0
+    const pr = this.args.packingRatioPercent/100.0
+    const sp = (100.0 - this.args.soilPercent)/100.0
     this.correctedVolume = (gv*pr*sp)
   }
 
   computePileMass() {
     /* Calc mass w/ corrected vol and oven-dry density based on sp. comp */
-    if (this.unitSystem == UnitSystems.English) {
+    if (this.args.unitSystem == UnitSystems.English) {
       this.pileMass = (this.correctedVolume * this.woodDensity) / 2000.0
     } else {
       this.pileMass = ((this.correctedVolume * m3_to_ft3 * this.woodDensity) / 2000.0) * tons_to_Mg

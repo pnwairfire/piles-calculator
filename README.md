@@ -26,6 +26,16 @@ To call the script:
         --secondary-species-density 3 --secondary-species-pct 10 \
         --pile-quality Clean
 
+Use `node inspect` to step into the code. e.g.:
+
+    node inspect ./dist/bin/piles-calc Machine -i 2 -n 10 \
+        -s HalfSphere --h1 5 -c 90 \
+        --soil-percent 10 --packing-ratio-percent 90 \
+        --primary-species-density 20 --primary-species-pct 90 \
+        --secondary-species-density 3 --secondary-species-pct 10 \
+        --pile-quality Clean
+
+
 To make a request to the web server:
 
      curl "http://localhost:3000/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&pileComposition=Conifer"
