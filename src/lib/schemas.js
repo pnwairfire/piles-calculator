@@ -15,15 +15,13 @@ const enumErrorMap = (issue, _ctx) =>  {
     return { message: `'${issue.path[0]}' must be one of the following: ${issue.options.join(', ')}` }
 }
 
-
 const commonOptions = z.object({
   numberOfPiles: z.coerce.number({
     required_error: `'numberOfPiles' is required`,
     invalid_type_error: `'numberOfPiles' must be a positive intenger`,
   }).int().gt(0, gt0Msg('numberOfPiles')),
   shape: z.enum(ShapeTypes.values, { errorMap: enumErrorMap }),
-  unitSystem: z.enum(UnitSystems.values, { errorMap: enumErrorMap })
-    .default(UnitSystems.English),
+  unitSystem: z.enum(UnitSystems.values, { errorMap: enumErrorMap }).default(UnitSystems.English),
   // The set of required dimension values depends on the shape. So, we mark them
   // as optional here and check for the shape specific required set later
   h1: z.coerce.number({

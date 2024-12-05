@@ -6,7 +6,7 @@ function createEnum(name, values) {
   obj.values = values
   obj.validate = key => {
     if (values.indexOf(key) < 0)
-      throw `${name} must be one of the following: ${values.join(', ')}`
+      throw `${name} must be one of the following: ${values.join(', ')} (you gave ${key})`
   }
   return Object.freeze(obj);
 }

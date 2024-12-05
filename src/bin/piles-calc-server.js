@@ -64,15 +64,15 @@ function callCompute(pileType, c, schema) {
   let r = null
 
   try {
-    schema.parse(c.req.query());
+    const args = schema.parse(c.req.query());
+    //console.log('args: ', args)
 
-    // TODO: convert all query parms; is there a way to specify a schema
-    //   with allowed query params and their types
-    r = compute(pileType, c.req.query())
+    r = compute(pileType, args)
 
     // Leave status == 200
   } catch (e) {
     // TODO: figure out why `e instanceof InvalidInputError` isn't working here
+    //console.log(typeof e)
     if (e instanceof InvalidInputError) {
       status = 400
       r = { error: e.message }

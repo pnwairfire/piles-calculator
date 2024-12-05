@@ -55,6 +55,7 @@ class Pile {
   constructor(args, shape) {
     this.args = args
     this.shape = shape
+    this.volume = shape.volume
 
     this.validateInputs()
   }
@@ -71,8 +72,9 @@ class Pile {
   }
 
   isValidPercent(val, name, allowNull) {
-    if ((val === null && !allowNull) || !isNumeric(val) || val < 0 || val > 100)
-      throw new InvalidInputError(`${name} percent must be between 0 and 100`)
+    if ((val === null && !allowNull) || !isNumeric(val) || val < 0 || val > 100) {
+      throw new InvalidInputError(`${name} (${val} - ${typeof val}) percent must be between 0 and 100.`)
+    }
   }
 
 
@@ -197,15 +199,15 @@ export class MachinePile extends Pile {
   /* Compuations */
 
   computeWoodDensity() {
-    this.woodDensity = (this.primarySpeciesPct / 100) * htis.primarySpeciesDensity
+    this.woodDensity = (this.primarySpeciesPct / 100) * this.primarySpeciesDensity
     if (this.secondarySpeciesPct)
       this.woodDensity += (this.secondarySpeciesPct / 100) * this.secondarySpeciesDensity
   }
 
   computeCorrectedVolume() {
-    gv = this.shape.volume
-    pr = this.packingRatioPercent/100.0
-    sp = (100.0 - this.soilPercent)/100.0
+    const gv = this.shape.volume
+    const pr = this.packingRatioPercent/100.0
+    const sp = (100.0 - this.soilPercent)/100.0
     this.correctedVolume = (gv*pr*sp)
   }
 
