@@ -1,3 +1,6 @@
 .private/
 dist/
 node_modules/
+requirements*
+fabfile.py
+.python-version

@@ -1,18 +1,17 @@
 ## Development
 
-First run `npm link`.  Then, in a terminal, use `esbuild` to watch and rebuild
-automatically:
+First run the following in a terminal to start automatic rebuilds (using `esbuild`)
+and to make the piles calc executables globally available:
 
+    npm link
     npm run build:watch
 
-In another terminal, run the piles calc server in dev mode, using nodemon
-to auto-reload:
+In another terminal, run the piles calc server in dev mode (which uses nodemon
+to auto-reload):
 
     npm run serve:dev
 
-To run in production mode
-
-    npm run serve
+When you're ready to run in production mode, you'd use `npm run serve`
 
 To call the script:
 
@@ -35,7 +34,6 @@ Use `node inspect` to step into the code. e.g.:
         --secondary-species-density 3 --secondary-species-pct 10 \
         --pile-quality Clean
 
-
 To make a request to the web server:
 
      curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&pileComposition=Conifer"
@@ -44,21 +42,14 @@ To make a request to the web server:
 
 ### Docker
 
-To build a docker image and run the web server:
+To build a docker image and run the web server in a container:
 
     docker compose -f ./docker-compose.yml -p piles-calculator up --build
 
-You can also run the piles calculator script with this docker image that's built:
+You can also run the piles calculator script with the docker image that's built:
 
     docker run --rm piles-calculator piles-calc -h
-
 
 ### Tests
 
     npm test
-
-
-## Deploying
-
-    pip install -r requirements-dev.txt
-    fab deploy -e test
