@@ -42,6 +42,12 @@ To make a request to the web server:
 
      curl "http://localhost:3000/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPct=90&secondarySpeciesDensity=3&secondarySpeciesPct=10&pileQuality=Clean"
 
+### Docker
+
+To build docker image and run web server:
+
+    docker build . -t piles-calculator
+    docker run --rm -ti
 
 ### Tests
 
