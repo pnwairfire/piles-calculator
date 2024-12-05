@@ -5,6 +5,7 @@ services:
       - piles-calculator-network
     build:
       context: .
+    image: piles-calculator
     restart: always
     ports:
       - "3040:3040"

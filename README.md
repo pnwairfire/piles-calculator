@@ -38,17 +38,27 @@ Use `node inspect` to step into the code. e.g.:
 
 To make a request to the web server:
 
-     curl "http://localhost:3000/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&pileComposition=Conifer"
+     curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&pileComposition=Conifer"
 
-     curl "http://localhost:3000/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPct=90&secondarySpeciesDensity=3&secondarySpeciesPct=10&pileQuality=Clean"
+     curl "http://localhost:3040/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPct=90&secondarySpeciesDensity=3&secondarySpeciesPct=10&pileQuality=Clean"
 
 ### Docker
 
-To build docker image and run web server:
+To build a docker image and run the web server:
 
-    docker build . -t piles-calculator
-    docker run --rm -ti
+    docker compose -f ./docker-compose.yml -p piles-calculator up --build
+
+You can also run the piles calculator script with this docker image that's built:
+
+    docker run --rm piles-calculator piles-calc -h
+
 
 ### Tests
 
     npm test
+
+
+## Deploying
+
+    pip install -r requirements-dev.txt
+    fab deploy -e test
