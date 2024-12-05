@@ -48,7 +48,7 @@ app.get('/hand/', (c) => {
 })
 
 app.get('/machine/', (c) => {
-  const { r, status } = callCompute(PileType.Hand, c, machineSchema)
+  const { r, status } = callCompute(PileType.Machine, c, machineSchema)
 
   // TODO: figure out why chaining `status` and `json` isn't working
   //return c.status(status).json(r)
