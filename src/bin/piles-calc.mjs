@@ -2,11 +2,11 @@
 
 import yargs from 'yargs/yargs'
 
-import { InvalidInputError } from '../lib/exceptions'
+import { InvalidInputError } from '../lib/exceptions.mjs'
 import {
   ShapeTypes, PileCompositionOptions, PileQualityOptions, UnitSystems
-} from '../lib/enums'
-import { compute } from '../index'
+} from '../lib/enums.mjs'
+import { compute } from '../index.mjs'
 
 
 function addGeneralOptions(_yargs) {

@@ -4,10 +4,10 @@ import yargs from 'yargs/yargs'
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
-import { InvalidInputError } from '../lib/exceptions'
-import { compute } from '../index'
-import { handSchema, machineSchema } from '../lib/schemas'
-import { PileType } from '../lib/enums'
+import { InvalidInputError } from '../lib/exceptions.mjs'
+import { compute } from '../index.mjs'
+import { handSchema, machineSchema } from '../lib/schemas.mjs'
+import { PileType } from '../lib/enums.mjs'
 
 
 const argv = yargs(process.argv.slice(2))

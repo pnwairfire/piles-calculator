@@ -4,10 +4,10 @@ https://github.com/pnwairfire/fera-apps-pilescalc_python/blob/main/piles/py/pile
 (which was written by @pceagle)
 */
 
-import { InvalidInputError } from './exceptions'
+import { InvalidInputError } from './exceptions.mjs'
 import {
   UnitSystems, PileCompositionOptions, PileQualityOptions
-} from './enums'
+} from './enums.mjs'
 
 function isNumeric(val) {
   return (typeof val == 'number')

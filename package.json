@@ -14,8 +14,8 @@
     "piles-calc-server": "./dist/bin/piles-calc-server.js"
   },
   "scripts": {
-    "build": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --external:livereload-js --bundle --platform=node --outdir=dist/",
-    "build:watch": "esbuild src/index.js src/bin/piles-calc.js src/bin/piles-calc-server.js --external:livereload-js --bundle --platform=node --outdir=dist/ --watch",
+    "build": "esbuild src/index.mjs src/bin/piles-calc.mjs src/bin/piles-calc-server.mjs --external:livereload-js --bundle --platform=node --outdir=dist/",
+    "build:watch": "esbuild src/index.mjs src/bin/piles-calc.mjs src/bin/piles-calc-server.mjs --external:livereload-js --bundle --platform=node --outdir=dist/ --watch",
     "serve": "piles-calc-server",
     "serve:dev": "nodemon ./dist/bin/piles-calc-server.js",
     "test": "jest"

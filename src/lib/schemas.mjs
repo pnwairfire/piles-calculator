@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 import {
   ShapeTypes, PileCompositionOptions, PileQualityOptions, UnitSystems
-} from './enums'
+} from './enums.mjs'
 
 const gt0Msg = n => `'${n}' must be greater than 0`
 const gte0Msg = n => `'${n}' must be greater than or equal to 0`

@@ -1,5 +1,5 @@
-import { InvalidInputError } from './exceptions'
-import { ShapeTypes } from "./enums";
+import { InvalidInputError } from './exceptions.mjs'
+import { ShapeTypes } from "./enums.mjs";
 
 
 export class Shape {

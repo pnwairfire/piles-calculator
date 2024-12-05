@@ -1,6 +1,6 @@
-import { PileType } from './lib/enums'
-import { Shape } from './lib/shape'
-import { HandPile, MachinePile } from './lib/pile'
+import { PileType } from './lib/enums.mjs'
+import { Shape } from './lib/shape.mjs'
+import { HandPile, MachinePile } from './lib/pile.mjs'
 
 export function compute(pileType, args) {
   /* Main entry point for script and web service */
