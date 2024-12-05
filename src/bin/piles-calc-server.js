@@ -94,4 +94,7 @@ function callCompute(pileType, c, schema) {
   return { r, status }
 }
 
-serve(app)
+serve({
+  fetch: app.fetch,
+  port: 3040,
+})
