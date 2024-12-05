@@ -15,6 +15,13 @@ const enumErrorMap = (issue, _ctx) =>  {
     return { message: `'${issue.path[0]}' must be one of the following: ${issue.options.join(', ')}` }
 }
 
+
+
+// TODO: use superRefine to make sure the correct dimensions are defined for
+//   each shape type?  (or just defer to existing logic in underlying module?)
+
+
+
 const commonOptions = z.object({
   numberOfPiles: z.coerce.number({
     required_error: `'numberOfPiles' is required`,
@@ -69,6 +76,11 @@ export const machineSchema = z.object({
     required_error: `'primarySpeciesPct' is required`,
     invalid_type_error: `'primarySpeciesPct' must be a number between 0 and 100`,
   }).gt(0, gt0Msg('primarySpeciesPct')).lte(100, lte100Msg('primarySpeciesPct')),
+
+  // TODO: call `.optional()` on secondary density and pct, but use
+  //   `superRefine` to make sure that, if one is defined, then the
+  //   other is as well
+
   secondarySpeciesDensity: z.coerce.number({
     required_error: `'secondarySpeciesDensity' is required`,
     invalid_type_error: `'secondarySpeciesDensity' must be a non-negative number`,
