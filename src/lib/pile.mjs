@@ -14,7 +14,7 @@ function isNumeric(val) {
 }
 
 
-/* Converion Ratios */
+/* Conversion Ratios */
 
 // Metric -> English conversion factors
 const m3_to_ft3 = 35.3146667214886

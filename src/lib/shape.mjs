@@ -20,9 +20,9 @@ export class Shape {
 
     /* Half Sphere */
     if (this.shapeType == ShapeTypes.HalfSphere) {
-      /*  volume = (PI * h1^3)/6  */
+      /*  volume = (2 * PI * h1^3) / 3  */
       this.validate('h1')
-      this._volume = (Math.PI * Math.pow(this.dims.h1, 3)) / 6
+      this._volume = (2 * Math.PI * Math.pow(this.dims.h1, 3)) / 3
     }
 
     /* Paraboloid */
