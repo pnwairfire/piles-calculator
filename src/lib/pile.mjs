@@ -112,7 +112,7 @@ class Pile {
 
 
 /*
- * HandPile
+ * Hand Pile
  */
 
 export class HandPile extends Pile {
@@ -163,7 +163,7 @@ export class HandPile extends Pile {
 
     // Mass computation assumes volume in m^3, so convert if necessary
     const correctedVolumeMetric = (this.args.unitSystem == UnitSystems.English)
-      ? (this.correctedVolume) : (this.correctedVolume * ft3_to_m3)
+      ? (this.correctedVolume * ft3_to_m3) : (this.correctedVolume)
 
     const massMetric = (this.args.pileComposition == PileCompositionOptions.Conifer)
       ? (Math.exp(4.4281 + 0.8028*Math.log(correctedVolumeMetric)))
@@ -177,7 +177,7 @@ export class HandPile extends Pile {
 
 
 /*
- * HandPile
+ * Machine Pile
  */
 
 export class MachinePile extends Pile {
