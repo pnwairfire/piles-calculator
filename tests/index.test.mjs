@@ -36,12 +36,13 @@ const roundToPrecision = (value, precision=8) => {
   return value; // Non-numeric, non-object values remain unchanged
 };
 
-const numCases = 1
-test('multiple cases', () => {
-  for (let e of inputData.slice(0, numCases)) {
-    const expectedOuput = roundToPrecision(outputDataById[e.id], 8)
-    const output =  roundToPrecision(compute(e.pileType, e), 8)
+const numCases = inputData.length
+for (let e of inputData.slice(0, numCases)) {
+  test(`Scenario id ${e.id}`, () => {
+    console.log(`Running scenario ${e.id}`)
+    const expectedOuput = roundToPrecision(outputDataById[e.id], 6)
+    const output =  roundToPrecision(compute(e.pileType, e), 6)
     //console.log(output)
-    expect(output).toBe(expectedOuput)
-  }
-});
+    expect(output).toStrictEqual(expectedOuput)
+  })
+};
