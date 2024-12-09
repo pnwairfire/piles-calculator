@@ -25,7 +25,7 @@ const outputDataById = JSON.parse(fs.readFileSync(outputDataFile, 'utf8'))
 const roundToPrecision = (value, precision=8) => {
   if (typeof value === 'number') {
     const f = Math.pow(10, precision)
-    return parseInt(value * f) / f
+    return Math.round(value * f) / f
   }
   if (typeof value === 'object' && value !== null) {
     return Object.keys(value).reduce((acc, key) => {
