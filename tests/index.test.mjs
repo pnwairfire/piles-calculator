@@ -39,7 +39,7 @@ const roundToPrecision = (value, precision=8) => {
 const numCases = inputData.length
 for (let e of inputData.slice(0, numCases)) {
   test(`Scenario id ${e.id}`, () => {
-    console.log(`Running scenario ${e.id}`)
+    //console.log(`Running scenario ${e.id}`)
     const expectedOuput = roundToPrecision(outputDataById[e.id], 6)
     const output =  roundToPrecision(compute(e.pileType, e), 6)
     //console.log(output)

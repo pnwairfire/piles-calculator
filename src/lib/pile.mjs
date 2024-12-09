@@ -20,6 +20,7 @@ function isNumeric(val) {
 const m3_to_ft3 = 35.3146667214886
 const kg_to_lb = 2.20462262184878
 const Mg_to_tons = 1.10231131 // Mg is metric tons
+const gpercm3_to_lbperft3 = 62.4279605762
 
 // English -> metric conversion factors
 const ft3_to_m3 = 1 / m3_to_ft3
@@ -234,7 +235,7 @@ export class MachinePile extends Pile {
     if (this.args.unitSystem == UnitSystems.English) {
       this.pileMass = (this.correctedVolume * this.woodDensity) / 2000.0
     } else {
-      this.pileMass = ((this.correctedVolume * m3_to_ft3 * this.woodDensity) / 2000.0) * tons_to_Mg
+      this.pileMass = ((this.correctedVolume * m3_to_ft3 * this.woodDensity * gpercm3_to_lbperft3) / 2000.0) * tons_to_Mg
     }
   }
 }
