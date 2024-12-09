@@ -39,10 +39,11 @@ function marshalInputData(row) {
 
   return {
     id: row['pileGroupID'],
-    unit: UnitSystems.values[parseInt(row['unitsys']) - 1],
+    unitSystem: UnitSystems.values[parseInt(row['unitsys']) - 1],
     numberOfPiles: parseInt(row['numPiles']),
     pileType: PileType.values[parseInt(row['pileType']) - 1],
-    shape: ShapeTypes.values[parseInt(row['pileShape']) - 1],
+    // shape is zero-indexed
+    shape: ShapeTypes.values[parseInt(row['pileShape'])],
     w1: row['W1'] ? parseFloat(row['W1']) : null,
     l1: row['L1'] ? parseFloat(row['L1']) : null,
     h1: row['H1'] ? parseFloat(row['H1']) : null,
@@ -70,18 +71,18 @@ function marshalInputData(row) {
 function marshalOutputData(row) {
   return {
     "id": row['PileGroupID'],
-    "volume": row['Geometric Volume'],
-    "correctedVolume": row['True/Wood Volume'],
-    "pileMass": row['Pile Biomass'],
-    "consumedMass": row['Consumed Fuel'],
+    "volume": parseFloat(row['Geometric Volume']),
+    "correctedVolume": parseFloat(row['True/Wood Volume']),
+    "pileMass": parseFloat(row['Pile Biomass']),
+    "consumedMass": parseFloat(row['Consumed Fuel']),
     "emissions": {
-      "PM": row['PM'],
-      "PM10": row['PM10'],
-      "PM2.5": row['PM2.5'],
-      "CO": row['CO'],
-      "CO2": row['CO2'],
-      "CH4": row['CH4'],
-      "NMHC": row['NMHC']
+      "PM": parseFloat(row['PM']),
+      "PM10": parseFloat(row['PM10']),
+      "PM2.5": parseFloat(row['PM2.5']),
+      "CO": parseFloat(row['CO']),
+      "CO2": parseFloat(row['CO2']),
+      "CH4": parseFloat(row['CH4']),
+      "NMHC": parseFloat(row['NMHC']),
     }
   }
 }
