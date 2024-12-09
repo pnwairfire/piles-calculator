@@ -1,4 +1,4 @@
-import { ShapeTypes } from "../../src/lib/enums";
+import { ShapeTypes } from "../../src/lib/enums.mjs";
 
 test("Shape validate throws exception on invalid shape", () => {
   const t = () => {

@@ -1,5 +1,5 @@
-import { ShapeTypes } from "../../src/lib/enums";
-import { Shape } from "../../src/lib/shape";
+import { ShapeTypes } from "../../src/lib/enums.mjs";
+import { Shape } from "../../src/lib/shape.mjs";
 
 test("Inavalid shape type", () => {
   const t = () => {
