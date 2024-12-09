@@ -10,7 +10,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -32,7 +32,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -54,7 +54,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -76,7 +76,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -98,7 +98,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -120,7 +120,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -142,7 +142,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -164,7 +164,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -186,7 +186,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -208,7 +208,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -230,7 +230,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -252,7 +252,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -274,7 +274,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -296,7 +296,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -318,7 +318,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -340,7 +340,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -362,7 +362,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -384,7 +384,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -406,7 +406,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -428,7 +428,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -450,7 +450,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": "Conifer",
     "soilPercent": null,
@@ -472,7 +472,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -494,7 +494,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -516,7 +516,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -538,7 +538,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -560,7 +560,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -582,7 +582,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -604,7 +604,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": "ShrubHardwood",
     "soilPercent": null,
@@ -626,7 +626,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -635,7 +635,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "30",
@@ -648,7 +648,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -657,7 +657,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "31",
@@ -670,7 +670,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -679,7 +679,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "32",
@@ -692,7 +692,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -701,7 +701,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "33",
@@ -714,7 +714,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -723,7 +723,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "34",
@@ -736,7 +736,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -745,7 +745,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "35",
@@ -758,7 +758,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -767,7 +767,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "36",
@@ -780,7 +780,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -789,7 +789,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "37",
@@ -802,7 +802,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -811,7 +811,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "38",
@@ -824,7 +824,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -833,7 +833,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "39",
@@ -846,7 +846,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -855,7 +855,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "40",
@@ -868,7 +868,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -877,7 +877,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "41",
@@ -890,7 +890,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -899,7 +899,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "42",
@@ -912,7 +912,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -921,7 +921,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "43",
@@ -934,7 +934,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -943,7 +943,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "44",
@@ -956,7 +956,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -965,7 +965,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "45",
@@ -978,7 +978,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -987,7 +987,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "46",
@@ -1000,7 +1000,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1009,7 +1009,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "47",
@@ -1022,7 +1022,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1031,7 +1031,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "48",
@@ -1044,7 +1044,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1053,7 +1053,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "49",
@@ -1066,7 +1066,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1075,7 +1075,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "50",
@@ -1088,7 +1088,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1097,7 +1097,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "51",
@@ -1110,7 +1110,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1119,7 +1119,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "52",
@@ -1132,7 +1132,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1141,7 +1141,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "53",
@@ -1154,7 +1154,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1163,7 +1163,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "54",
@@ -1176,7 +1176,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1185,7 +1185,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "55",
@@ -1198,7 +1198,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1207,7 +1207,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "56",
@@ -1220,7 +1220,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1229,7 +1229,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "57",
@@ -1242,7 +1242,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1251,7 +1251,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "58",
@@ -1264,7 +1264,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1273,7 +1273,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "59",
@@ -1286,7 +1286,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1295,7 +1295,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "60",
@@ -1308,7 +1308,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1317,7 +1317,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "61",
@@ -1330,7 +1330,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1339,7 +1339,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "62",
@@ -1352,7 +1352,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1361,7 +1361,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "63",
@@ -1374,7 +1374,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1383,7 +1383,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "64",
@@ -1396,7 +1396,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1405,7 +1405,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "65",
@@ -1418,7 +1418,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1427,7 +1427,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "66",
@@ -1440,7 +1440,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1449,7 +1449,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "67",
@@ -1462,7 +1462,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1471,7 +1471,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "68",
@@ -1484,7 +1484,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1493,7 +1493,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "69",
@@ -1506,7 +1506,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1515,7 +1515,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "70",
@@ -1528,7 +1528,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1537,7 +1537,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "71",
@@ -1550,7 +1550,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1559,7 +1559,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "72",
@@ -1572,7 +1572,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1581,7 +1581,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "73",
@@ -1594,7 +1594,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1603,7 +1603,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "74",
@@ -1616,7 +1616,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1625,7 +1625,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "75",
@@ -1638,7 +1638,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1647,7 +1647,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "76",
@@ -1660,7 +1660,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1669,7 +1669,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "77",
@@ -1682,7 +1682,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1691,7 +1691,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "78",
@@ -1704,7 +1704,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1713,7 +1713,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "79",
@@ -1726,7 +1726,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1735,7 +1735,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "80",
@@ -1748,7 +1748,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1757,7 +1757,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "81",
@@ -1770,7 +1770,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1779,7 +1779,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "82",
@@ -1792,7 +1792,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1801,7 +1801,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "83",
@@ -1814,7 +1814,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1823,7 +1823,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "84",
@@ -1836,7 +1836,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1845,7 +1845,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "85",
@@ -1858,7 +1858,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1867,7 +1867,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "86",
@@ -1880,7 +1880,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1889,7 +1889,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "87",
@@ -1902,7 +1902,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1911,7 +1911,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "88",
@@ -1924,7 +1924,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1933,7 +1933,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "89",
@@ -1946,7 +1946,7 @@
     "h1": null,
     "w2": 2,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1955,7 +1955,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "90",
@@ -1968,7 +1968,7 @@
     "h1": 2,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1977,7 +1977,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "91",
@@ -1990,7 +1990,7 @@
     "h1": 2,
     "w2": 2,
     "l2": 2,
-    "h3": 2,
+    "h2": 2,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -1999,7 +1999,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 0.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "92",
@@ -2012,7 +2012,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2021,7 +2021,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "93",
@@ -2034,7 +2034,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2043,7 +2043,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "94",
@@ -2056,7 +2056,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2065,7 +2065,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "95",
@@ -2078,7 +2078,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2087,7 +2087,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "96",
@@ -2100,7 +2100,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2109,7 +2109,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "97",
@@ -2122,7 +2122,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2131,7 +2131,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "98",
@@ -2144,7 +2144,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2153,7 +2153,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "99",
@@ -2166,7 +2166,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2175,7 +2175,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "100",
@@ -2188,7 +2188,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2197,7 +2197,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "101",
@@ -2210,7 +2210,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2219,7 +2219,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "102",
@@ -2232,7 +2232,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2241,7 +2241,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "103",
@@ -2254,7 +2254,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2263,7 +2263,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "104",
@@ -2276,7 +2276,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2285,7 +2285,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "105",
@@ -2298,7 +2298,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2307,7 +2307,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "106",
@@ -2320,7 +2320,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2329,7 +2329,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "107",
@@ -2342,7 +2342,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2351,7 +2351,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "108",
@@ -2364,7 +2364,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2373,7 +2373,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "109",
@@ -2386,7 +2386,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2395,7 +2395,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "110",
@@ -2408,7 +2408,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2417,7 +2417,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "111",
@@ -2430,7 +2430,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2439,7 +2439,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "112",
@@ -2452,7 +2452,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2461,7 +2461,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 1
+    "pileQuality": "Clean"
   },
   {
     "id": "113",
@@ -2474,7 +2474,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2483,7 +2483,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "114",
@@ -2496,7 +2496,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2505,7 +2505,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "115",
@@ -2518,7 +2518,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2527,7 +2527,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "116",
@@ -2540,7 +2540,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2549,7 +2549,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "117",
@@ -2562,7 +2562,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2571,7 +2571,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "118",
@@ -2584,7 +2584,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2593,7 +2593,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "119",
@@ -2606,7 +2606,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2615,7 +2615,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "120",
@@ -2628,7 +2628,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2637,7 +2637,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "121",
@@ -2650,7 +2650,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2659,7 +2659,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "122",
@@ -2672,7 +2672,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2681,7 +2681,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "123",
@@ -2694,7 +2694,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2703,7 +2703,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "124",
@@ -2716,7 +2716,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2725,7 +2725,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "125",
@@ -2738,7 +2738,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2747,7 +2747,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "126",
@@ -2760,7 +2760,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2769,7 +2769,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "127",
@@ -2782,7 +2782,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2791,7 +2791,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "128",
@@ -2804,7 +2804,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2813,7 +2813,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "129",
@@ -2826,7 +2826,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2835,7 +2835,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "130",
@@ -2848,7 +2848,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2857,7 +2857,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "131",
@@ -2870,7 +2870,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2879,7 +2879,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "132",
@@ -2892,7 +2892,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2901,7 +2901,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "133",
@@ -2914,7 +2914,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2923,7 +2923,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 2
+    "pileQuality": "Dirty"
   },
   {
     "id": "134",
@@ -2936,7 +2936,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2945,7 +2945,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "135",
@@ -2958,7 +2958,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2967,7 +2967,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "136",
@@ -2980,7 +2980,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -2989,7 +2989,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "137",
@@ -3002,7 +3002,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3011,7 +3011,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "138",
@@ -3024,7 +3024,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3033,7 +3033,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "139",
@@ -3046,7 +3046,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3055,7 +3055,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "140",
@@ -3068,7 +3068,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3077,7 +3077,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "141",
@@ -3090,7 +3090,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3099,7 +3099,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "142",
@@ -3112,7 +3112,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3121,7 +3121,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "143",
@@ -3134,7 +3134,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3143,7 +3143,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "144",
@@ -3156,7 +3156,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3165,7 +3165,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "145",
@@ -3178,7 +3178,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3187,7 +3187,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "146",
@@ -3200,7 +3200,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3209,7 +3209,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "147",
@@ -3222,7 +3222,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3231,7 +3231,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "148",
@@ -3244,7 +3244,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3253,7 +3253,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "149",
@@ -3266,7 +3266,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3275,7 +3275,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "150",
@@ -3288,7 +3288,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3297,7 +3297,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "151",
@@ -3310,7 +3310,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3319,7 +3319,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "152",
@@ -3332,7 +3332,7 @@
     "h1": null,
     "w2": 6.56,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3341,7 +3341,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "153",
@@ -3354,7 +3354,7 @@
     "h1": 6.56,
     "w2": null,
     "l2": null,
-    "h3": null,
+    "h2": null,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3363,7 +3363,7 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   },
   {
     "id": "154",
@@ -3376,7 +3376,7 @@
     "h1": 6.56,
     "w2": 6.56,
     "l2": 6.56,
-    "h3": 6.56,
+    "h2": 6.56,
     "percentConsumed": 90,
     "pileComposition": null,
     "soilPercent": 10,
@@ -3385,6 +3385,6 @@
     "primarySpeciesPct": 50,
     "secondarySpeciesDensity": 44.72,
     "secondarySpeciesPct": 50,
-    "pileQuality": 3
+    "pileQuality": "VeryDirty"
   }
 ]

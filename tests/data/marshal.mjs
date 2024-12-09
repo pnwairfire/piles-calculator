@@ -7,7 +7,7 @@ import path from 'path'
 import { parse } from '@fast-csv/parse';
 
 import {
-  UnitSystems, PileType, ShapeTypes, PileCompositionOptions
+  UnitSystems, PileType, ShapeTypes, PileCompositionOptions, PileQualityOptions
 } from '../../src/lib/enums.mjs'
 
 
@@ -49,10 +49,12 @@ function marshalInputData(row) {
     h1: row['H1'] ? parseFloat(row['H1']) : null,
     w2: row['W2'] ? parseFloat(row['W2']) : null,
     l2: row['L2'] ? parseFloat(row['L2']) : null,
-    h3: row['H2'] ? parseFloat(row['H2']) : null,
-    percentConsumed: row['percentConsumed'] ? parseFloat(row['percentConsumed']) : null,
+    h2: row['H2'] ? parseFloat(row['H2']) : null,
+    percentConsumed: row['percentConsumed']
+      ? parseFloat(row['percentConsumed']) : null,
     // hand pile params
-    pileComposition: row['handPileSpecies'] ? PileCompositionOptions.values[parseInt(row['handPileSpecies']) - 1] : null,
+    pileComposition: row['handPileSpecies']
+      ? PileCompositionOptions.values[parseInt(row['handPileSpecies']) - 1] : null,
     // maching pile params
     soilPercent: row['soilPercent'] ? parseFloat(row['soilPercent']) : null,
     packingRatioPercent: row['packingRatio'] ? parseFloat(row['packingRatio']) : null,
@@ -60,7 +62,8 @@ function marshalInputData(row) {
     primarySpeciesPct: row['sp1%'] ? parseFloat(row['sp1%']) : null,
     secondarySpeciesDensity: row['sp2'] ? parseFloat(row['sp2']) : null,
     secondarySpeciesPct: row['sp2%'] ? parseFloat(row['sp2%']) : null,
-    pileQuality: row['pileQuality'] ? parseFloat(row['pileQuality']) : null,
+    pileQuality: row['pileQuality']
+      ? PileQualityOptions.values[parseInt(row['pileQuality'] -1 )] : null,
   }
 
   return row
