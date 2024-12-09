@@ -92,7 +92,7 @@ test("Valid h1 but invalid negative w1 specified for Paraboloid", () => {
 
 test("Valid HalfSphere", () => {
   const p = new Shape(ShapeTypes.HalfSphere, {h1: 3})
-  expect(p.volume).toBe(14.137166941154069)
+  expect(p.volume).toBe(56.548667764616276)
 });
 
 test("Valid Paraboloid", () => {
