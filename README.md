@@ -36,9 +36,9 @@ Use `node inspect` to step into the code. e.g.:
 
 To make a request to the web server:
 
-     curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&pileComposition=Conifer"
+     curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&pileComposition=Conifer"
 
-     curl "http://localhost:3040/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&percentConsumed=10&&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPercent=90&secondarySpeciesDensity=3&secondarySpeciesPercent=10&pileQuality=Clean"
+     curl "http://localhost:3040/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPercent=90&secondarySpeciesDensity=3&secondarySpeciesPercent=10&pileQuality=Clean"
 
 ### Docker
 
