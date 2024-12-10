@@ -1,12 +1,7 @@
-import { diff } from 'jest-diff';
 import { fileURLToPath } from 'url';
 import fs from 'fs'
 import path from 'path'
 
-import {
-  PileTypes, ShapeTypes, PileCompositionOptions,
-  UnitSystems, PileQualityOptions
-} from '../src/lib/enums.mjs'
 import { compute } from '../src/index.mjs';
 
 const thisDir = path.dirname(fileURLToPath(import.meta.url))
