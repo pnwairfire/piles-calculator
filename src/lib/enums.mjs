@@ -11,7 +11,7 @@ function createEnum(name, values) {
   return Object.freeze(obj);
 }
 
-export const PileType = createEnum('Pile Type', [
+export const PileTypes = createEnum('Pile Type', [
   'Hand', 'Machine'
 ])
 

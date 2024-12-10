@@ -7,7 +7,7 @@ import path from 'path'
 import { parse } from '@fast-csv/parse';
 
 import {
-  UnitSystems, PileType, ShapeTypes, PileCompositionOptions, PileQualityOptions
+  UnitSystems, PileTypes, ShapeTypes, PileCompositionOptions, PileQualityOptions
 } from '../../src/lib/enums.mjs'
 
 
@@ -41,7 +41,7 @@ function marshalInputData(row) {
     id: row['pileGroupID'],
     unitSystem: UnitSystems.values[parseInt(row['unitsys']) - 1],
     numberOfPiles: parseInt(row['numPiles']),
-    pileType: PileType.values[parseInt(row['pileType']) - 1],
+    pileType: PileTypes.values[parseInt(row['pileType']) - 1],
     // shape is zero-indexed
     shape: ShapeTypes.values[parseInt(row['pileShape'])],
     w1: row['W1'] ? parseFloat(row['W1']) : null,

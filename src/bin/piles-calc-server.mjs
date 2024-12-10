@@ -7,7 +7,7 @@ import { serve } from '@hono/node-server'
 import { InvalidInputError } from '../lib/exceptions.mjs'
 import { compute } from '../index.mjs'
 import { handSchema, machineSchema } from '../lib/schemas.mjs'
-import { PileType } from '../lib/enums.mjs'
+import { PileTypes } from '../lib/enums.mjs'
 
 
 const argv = yargs(process.argv.slice(2))
@@ -39,7 +39,7 @@ app.get('/docs/', (c) => {
 })
 
 app.get('/hand/', (c) => {
-  const { r, status } = callCompute(PileType.Hand, c, handSchema)
+  const { r, status } = callCompute(PileTypes.Hand, c, handSchema)
 
   // TODO: figure out why chaining `status` and `json` isn't working
   //return c.status(status).json(r)
@@ -48,7 +48,7 @@ app.get('/hand/', (c) => {
 })
 
 app.get('/machine/', (c) => {
-  const { r, status } = callCompute(PileType.Machine, c, machineSchema)
+  const { r, status } = callCompute(PileTypes.Machine, c, machineSchema)
 
   // TODO: figure out why chaining `status` and `json` isn't working
   //return c.status(status).json(r)

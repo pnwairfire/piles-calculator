@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 
 import {
-  PileType, ShapeTypes, PileCompositionOptions,
+  PileTypes, ShapeTypes, PileCompositionOptions,
   UnitSystems, PileQualityOptions
 } from '../src/lib/enums.mjs'
 import { compute } from '../src/index.mjs';

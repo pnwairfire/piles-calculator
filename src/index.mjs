@@ -1,4 +1,4 @@
-import { PileType } from './lib/enums.mjs'
+import { PileTypes } from './lib/enums.mjs'
 import { Shape } from './lib/shape.mjs'
 import { HandPile, MachinePile } from './lib/pile.mjs'
 
@@ -12,7 +12,7 @@ export function compute(pileType, args) {
   }, {})
 
   const shape = new Shape(args.shape, dimensions)
-  let pile = (pileType == PileType.Hand) ?
+  let pile = (pileType == PileTypes.Hand) ?
     (new HandPile(args, shape)) : (new MachinePile(args, shape))
 
   return {
