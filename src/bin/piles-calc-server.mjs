@@ -17,7 +17,8 @@ const argv = yargs(process.argv.slice(2))
     alias: 'p',
     describe: 'Port',
     type: 'number',
-    demandOption: false
+    demandOption: false,
+    default: 3040
   })
   .check((argv) => {
     // if (argv.foo !== undefined && argv.foo < 18) {
@@ -96,5 +97,5 @@ function callCompute(pileType, c, schema) {
 
 serve({
   fetch: app.fetch,
-  port: 3040,
+  port: argv.port,
 })
