@@ -38,12 +38,12 @@ function addGeneralOptions(_yargs) {
       demandOption: false,
       default: UnitSystems.English
     })
-    .option('h1', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
-    .option('h2', { describe: "Height 1 (feet)", type: 'number', demandOption: false })
-    .option('w1', { describe: "Width 1 (feet)", type: 'number', demandOption: false })
-    .option('w2', { describe: "Width 2 (feet)", type: 'number', demandOption: false })
-    .option('l1', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
-    .option('l2', { describe: "Length 1 (feet)", type: 'number', demandOption: false })
+    .option('h1', { describe: "Height 1 (ft or m)", type: 'number', demandOption: false })
+    .option('h2', { describe: "Height 1 (ft or m)", type: 'number', demandOption: false })
+    .option('w1', { describe: "Width 1 (ft or m)", type: 'number', demandOption: false })
+    .option('w2', { describe: "Width 2 (ft or m)", type: 'number', demandOption: false })
+    .option('l1', { describe: "Length 1 (ft or m)", type: 'number', demandOption: false })
+    .option('l2', { describe: "Length 1 (ft or m)", type: 'number', demandOption: false })
     .option('percent-consumed', {
        alias: 'c',
        describe: "% of piled material consumed",
@@ -75,6 +75,7 @@ const argv = yargs(process.argv.slice(2))
         })
         .usage('Usage: $0 [options] hand [options]')
         .example('$0 Hand -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --comp Conifer')
+        .example('$0 Hand -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --comp Conifer --unit-system Metric')
         .example(`$0 Hand -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 -c 80 --comp ShrubHardwood`)
     }
   })
@@ -91,27 +92,27 @@ const argv = yargs(process.argv.slice(2))
           demandOption: true
         })
         .option('packing-ratio-percent', {
-          alias: 'packing-pct',
-          describe: "Packing ratio",
+          alias: 'packing-percent',
+          describe: "Packing ratio, as a percent",
           type: 'number',
           demandOption: true
         })
         .option('primary-species-density', {
-          describe: "Primary species wood density (lb/ft3)",
+          describe: "Primary species wood density (lb/ft3 or g/cm^3)",
           type: 'number',
           demandOption: true
         })
-        .option('primary-species-pct', {
+        .option('primary-species-percent', {
           describe: "Primary species %",
           type: 'number',
           demandOption: true
         })
         .option('secondary-species-density', {
-          describe: "Secondary species wood density (lb/ft3)",
+          describe: "Secondary species wood density (lb/ft^3 or g/cm^3)",
           type: 'number',
           demandOption: false
         })
-        .option('secondary-species-pct', {
+        .option('secondary-species-percent', {
           describe: "Secondary species %",
           type: 'number',
           demandOption: false
@@ -124,12 +125,16 @@ const argv = yargs(process.argv.slice(2))
           demandOption: true
         })
         .usage('Usage: $0 [options] machine [options]')
-        .example(`$0 Machine -i 2 -n 10 -s HalfSphere --h1 5 -c 90 --est-soil-pct 10 \\
-          --packing-ratio-pct 60 --primary-density 22 --primary-pct 80 --secondary-density 13 \\
-          --secondary-pct 20`)
+        .example(`$0 Machine -i 2 -n 10 -s HalfSphere --h1 5 -c 90 \\
+          --soil-percent 10 --packing-ratio-percent 60 \\
+          --primary-species-density 22 --primary-species-percent 80 \\
+          --secondary-species-density 13 --secondary-species-percent 20 \\
+          --pile-quality Clean`)
         .example(`$0 Machine -i 2 -n 40 -s HalfCylinder --h1 5 --w1 7 --l1 10 -c 80 \\
-          --est-soil-pct 20 --packing-ratio-pct 80 --primary-density 3 --primary-pct 60 \\
-          --secondary-density 5 --secondary-pct 40`)
+          --soil-percent 20 --packing-ratio-percent 80 \\
+          --primary-species-density 3 --primary-species-percent 60 \\
+          --secondary-species-density 5 --secondary-species-percent 40 \\
+          --pile-quality Clean`)
     }
   })
 

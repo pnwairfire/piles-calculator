@@ -72,10 +72,10 @@ export const machineSchema = z.object({
     required_error: `'primarySpeciesDensity' is required`,
     invalid_type_error: `'primarySpeciesDensity' must be a positive number`,
   }).gt(0, gt0Msg('primarySpeciesDensity')),
-  primarySpeciesPct: z.coerce.number({
-    required_error: `'primarySpeciesPct' is required`,
-    invalid_type_error: `'primarySpeciesPct' must be a number between 0 and 100`,
-  }).gt(0, gt0Msg('primarySpeciesPct')).lte(100, lte100Msg('primarySpeciesPct')),
+  primarySpeciesPercent: z.coerce.number({
+    required_error: `'primarySpeciesPercent' is required`,
+    invalid_type_error: `'primarySpeciesPercent' must be a number between 0 and 100`,
+  }).gt(0, gt0Msg('primarySpeciesPercent')).lte(100, lte100Msg('primarySpeciesPercent')),
 
   // TODO: call `.optional()` on secondary density and pct, but use
   //   `superRefine` to make sure that, if one is defined, then the
@@ -85,9 +85,9 @@ export const machineSchema = z.object({
     required_error: `'secondarySpeciesDensity' is required`,
     invalid_type_error: `'secondarySpeciesDensity' must be a non-negative number`,
   }).gte(0, gte0Msg('secondarySpeciesDensity')),
-  secondarySpeciesPct: z.coerce.number({
-    required_error: `'secondarySpeciesPct' is required`,
-    invalid_type_error: `'secondarySpeciesPct' must be a number between 0 and 100`,
-  }).gte(0, gte0Msg('secondarySpeciesPct')).lte(100, lte100Msg('secondarySpeciesPct')),
+  secondarySpeciesPercent: z.coerce.number({
+    required_error: `'secondarySpeciesPercent' is required`,
+    invalid_type_error: `'secondarySpeciesPercent' must be a number between 0 and 100`,
+  }).gte(0, gte0Msg('secondarySpeciesPercent')).lte(100, lte100Msg('secondarySpeciesPercent')),
   pileQuality: z.enum(PileQualityOptions.values, { errorMap: enumErrorMap }),
 }).merge(commonOptions)

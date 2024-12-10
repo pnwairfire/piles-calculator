@@ -201,9 +201,9 @@ export class MachinePile extends Pile {
 
     PileQualityOptions.validate(this.args.pileQuality)
 
-    this.isValidPercent(this.args.primarySpeciesPct, 'Primary Species')
-    this.isValidPercent(this.args.secondarySpeciesPct, 'Secondary Species', true)
-    if (this.args.primarySpeciesPct + this.args.secondarySpeciesPct !==100)
+    this.isValidPercent(this.args.primarySpeciesPercent, 'Primary Species')
+    this.isValidPercent(this.args.secondarySpeciesPercent, 'Secondary Species', true)
+    if (this.args.primarySpeciesPercent + this.args.secondarySpeciesPercent !==100)
       throw new InvalidInputError("Primary and secondary species percentages should add to 100%")
 
     this.isValidPercent(this.args.soilPercent, 'Soil')
@@ -218,9 +218,9 @@ export class MachinePile extends Pile {
     // TODO: verify that primary and secondary pcts add to 100, allowing
     //   for possibility of secondary pct not beind defined
 
-    this.woodDensity = (this.args.primarySpeciesPct / 100) * this.args.primarySpeciesDensity
-    if (this.args.secondarySpeciesPct)
-      this.woodDensity += (this.args.secondarySpeciesPct / 100) * this.args.secondarySpeciesDensity
+    this.woodDensity = (this.args.primarySpeciesPercent / 100) * this.args.primarySpeciesDensity
+    if (this.args.secondarySpeciesPercent)
+      this.woodDensity += (this.args.secondarySpeciesPercent / 100) * this.args.secondarySpeciesDensity
   }
 
   computeCorrectedVolume() {

@@ -59,9 +59,9 @@ function marshalInputData(row) {
     soilPercent: row['soilPercent'] ? parseFloat(row['soilPercent']) : null,
     packingRatioPercent: row['packingRatio'] ? parseFloat(row['packingRatio']) : null,
     primarySpeciesDensity: row['sp1'] ? parseFloat(row['sp1']) : null,
-    primarySpeciesPct: row['sp1%'] ? parseFloat(row['sp1%']) : null,
+    primarySpeciesPercent: row['sp1%'] ? parseFloat(row['sp1%']) : null,
     secondarySpeciesDensity: row['sp2'] ? parseFloat(row['sp2']) : null,
-    secondarySpeciesPct: row['sp2%'] ? parseFloat(row['sp2%']) : null,
+    secondarySpeciesPercent: row['sp2%'] ? parseFloat(row['sp2%']) : null,
     pileQuality: row['pileQuality']
       ? PileQualityOptions.values[parseInt(row['pileQuality'] -1 )] : null,
   }
