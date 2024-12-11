@@ -3,6 +3,8 @@
 import yargs from 'yargs/yargs'
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
+import { html, raw } from 'hono/html'
+import { zodToJsonSchema } from "zod-to-json-schema";
 
 import { InvalidInputError } from '../lib/exceptions.mjs'
 import { compute } from '../index.mjs'
@@ -34,9 +36,27 @@ const app = new Hono()
 /* Endpoints */
 
 app.get('/docs/', (c) => {
+  console.log('c.req: ', c.req)
+  const handPilesHtml = generateSchemaHtml(handSchema,
+    'curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&pileComposition=Conifer"')
+  const machinePilesHtml = generateSchemaHtml(machineSchema,
+    'curl "http://localhost:3040/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPercent=90&secondarySpeciesDensity=3&secondarySpeciesPercent=10&pileQuality=Clean"')
 
-  // TODO: generate from schemas?
+  return c.html(
+    html`<!doctype html>
+      <head>
+        <style>
+          th {text-align: left;}
+          th, td {padding: 5px; border: 1px solid gray;}
+        </style>
+      </head>
+      <h2>Hand Piles</h2>
+      ${raw(handPilesHtml)}
+      <h2>Machine Piles</h2>
+      ${raw(machinePilesHtml)}`
+  )
 
+  return c.json(generateDoc(handSchema))
 })
 
 app.get('/hand/', (c) => {
@@ -59,6 +79,22 @@ app.get('/machine/', (c) => {
 
 
 /* Helpers */
+
+function generateSchemaHtml(schema, example) {
+  const jsonSchema = zodToJsonSchema(schema)
+  console.log('schema: ', jsonSchema)
+  return '<h4>Query Arguments:</h4><table>'
+    + '<thead><tr><th>name</th><th>type</th><th>Description</th></thead>'
+    +'<tbody>'
+    + Object.keys(jsonSchema.properties).sort().map((key) => {
+      const val = jsonSchema.properties[key]
+      console.log('key, val: ', key, val)
+      const description = val.description || 'No description provided'
+      const type = val.type || 'Unknown type'
+      return `<tr><td><b><i>${key}</i></b></td><td>${type}</td><td>${description}</td></tr>`
+    }).join('')
+    + `</tbody></table><h4>Example</h4><code style="margin-left: 10px;">${example}</code>`
+}
 
 function callCompute(pileType, c, schema) {
   let status = 200

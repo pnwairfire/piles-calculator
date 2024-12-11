@@ -46,7 +46,7 @@ function addGeneralOptions(_yargs) {
     .option('l2', { describe: "Length 1 (ft or m)", type: 'number', demandOption: false })
     .option('percent-consumed', {
        alias: 'c',
-       describe: "% of piled material consumed",
+       describe: "Percent of piled material consumed",
        type: 'number',
        demandOption: true
      })
@@ -87,7 +87,7 @@ const argv = yargs(process.argv.slice(2))
     builder: (_yargs) => {
       return addGeneralOptions(_yargs)
         .option('soil-percent', {
-          describe: "Estimated % of pile volume that is soil.",
+          describe: "Estimated percent of pile volume that is soil",
           type: 'number',
           demandOption: true
         })
@@ -103,7 +103,7 @@ const argv = yargs(process.argv.slice(2))
           demandOption: true
         })
         .option('primary-species-percent', {
-          describe: "Primary species %",
+          describe: "Percent of pile composed of primary species",
           type: 'number',
           demandOption: true
         })
@@ -113,7 +113,7 @@ const argv = yargs(process.argv.slice(2))
           demandOption: false
         })
         .option('secondary-species-percent', {
-          describe: "Secondary species %",
+          describe: "Percent of pile composed of secondary species",
           type: 'number',
           demandOption: false
         })
