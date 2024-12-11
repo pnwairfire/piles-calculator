@@ -36,11 +36,12 @@ const app = new Hono()
 /* Endpoints */
 
 app.get('/docs/', (c) => {
-  console.log('c.req: ', c.req)
+  const baseUrl = c.req.url.replace(/\/docs\/?/, '')
+
   const handPilesHtml = generateSchemaHtml(handSchema,
-    'curl "http://localhost:3040/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&pileComposition=Conifer"')
+    `curl "${baseUrl}/hand/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&pileComposition=Conifer"`)
   const machinePilesHtml = generateSchemaHtml(machineSchema,
-    'curl "http://localhost:3040/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPercent=90&secondarySpeciesDensity=3&secondarySpeciesPercent=10&pileQuality=Clean"')
+    `curl "${baseUrl}/machine/?numberOfPiles=5&shape=HalfSphere&percentConsumed=12&h1=5&soilPercent=10&packingRatioPercent=90&primarySpeciesDensity=20&primarySpeciesPercent=90&secondarySpeciesDensity=3&secondarySpeciesPercent=10&pileQuality=Clean"`)
 
   return c.html(
     html`<!doctype html>
