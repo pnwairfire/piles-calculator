@@ -127,6 +127,10 @@ You can specify an alternate port with the `-p`/`--port` option
 
     piles-calc-server
 
+The web service also includes a docs page that renders html with information about
+API request arguments:
+
+    http://loca/docs/
 
 
 ## Development
