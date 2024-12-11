@@ -84,14 +84,20 @@ function generateSchemaHtml(schema, example) {
   const jsonSchema = zodToJsonSchema(schema)
   console.log('schema: ', jsonSchema)
   return '<h4>Query Arguments:</h4><table>'
-    + '<thead><tr><th>name</th><th>type</th><th>Description</th></thead>'
+    + '<thead><tr><th>name</th><th>type</th><th>limits</th><th>Description</th></thead>'
     +'<tbody>'
     + Object.keys(jsonSchema.properties).sort().map((key) => {
       const val = jsonSchema.properties[key]
-      console.log('key, val: ', key, val)
       const description = val.description || 'No description provided'
       const type = val.type || 'Unknown type'
-      return `<tr><td><b><i>${key}</i></b></td><td>${type}</td><td>${description}</td></tr>`
+      let limits = [
+        (val.exclusiveMinimum != null ? `> ${val.exclusiveMinimum}` : null),
+        (val.minimum != null ? `>= ${val.minimum}` : null),
+        (val.exclusiveMaximum != null ? `< ${val.exclusiveMaximum}` : null),
+        (val.maximum != null ? `<= ${val.maximum}` : null),
+      ].filter(e => e).join(', ')
+
+      return `<tr><td><b><i>${key}</i></b></td><td>${type}</td><td>${limits}</td><td>${description}</td></tr>`
     }).join('')
     + `</tbody></table><h4>Example</h4><code style="margin-left: 10px;">${example}</code>`
 }
