@@ -32,6 +32,22 @@ const argv = yargs(process.argv.slice(2))
 
 const app = new Hono()
 
+/* Middleware */
+
+// Add trailing slashes so that we don't need to define two endpoints
+// for each API endpoint - one with and one without the trailing slash
+function addTrailingSlash() {
+  return async (c, next) => {
+    const url = new URL(c.req.url);
+    if (!url.pathname.endsWith('/')) {
+      return c.redirect(url.pathname + '/' + url.search, 301);
+    }
+    await next();
+  };
+}
+
+app.use('*', addTrailingSlash());
+
 
 /* Endpoints */
 
@@ -83,7 +99,7 @@ app.get('/machine/', (c) => {
 
 function generateSchemaHtml(schema, example) {
   const jsonSchema = zodToJsonSchema(schema)
-  console.log('schema: ', jsonSchema)
+  //console.log('schema: ', jsonSchema)
   return '<h4>Query Arguments:</h4><table>'
     + '<thead><tr><th>name</th><th>type</th><th>limits</th><th>Description</th></thead>'
     +'<tbody>'
